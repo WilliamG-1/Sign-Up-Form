@@ -1,14 +1,66 @@
+:root {
+    --cyan-Accent: #3AF7E8;
+    font-family: ;
+}
+@font-face {
+    font-family: f;
+    src: url(assets/Norse-Bold.otf);
+}
 * {
     padding: 0;
     margin: 0;
+    color: white;
+    font-family: sans-serif;
 }
 body {
     background-color: black;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }   
 img {
+    object-fit: cover;
+    object-position: 85% 40%;
+    display: inline;
+    flex: 1;
     position: relative;
-    left: calc(110vh);
-    width: auto;
-    height: 100vh;
+    height: min(100vh);
+    width: 50vh;
+    min-width: 30vh;
 }
+.form {
+    padding: 30px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(3, 2, 43);
+    width: 40rem;
+    min-width: 40rem;
+}
+
+.header{
+    flex: 1;
+    background-color: blueviolet;
+}
+form {
+    flex: 3;
+    background-color: rgb(24, 226, 233);
+}
+.footer {
+    flex: 1;
+}
+button.create-account {
+    color: var(--cyan-Accent);
+    padding: 1.2rem;
+    margin: 1rem;
+    background-color: rgb(3, 2, 43);
+    border-radius: 6px;
+    border-color: var(--cyan-Accent);
+    border-style: solid;
+}
+button.create-account:hover{
+    color:rgb(3, 2, 43);
+    background-color: var(--cyan-Accent);
+}
+

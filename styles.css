@@ -73,14 +73,26 @@ button.create-account:hover {
 fieldset{
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    height: 80%;
-    background-color: blanchedalmond;
+    padding: 5em;
+    background-color: rgb(156, 17, 49);
+    gap: 40px;
 }
-fieldset>input{
-    width: max(35%, 500px);
-    height: 20px;
-    margin: 0 10px;
-    
+fieldset .entry{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: black 2px solid;
+    justify-content: flex-start;
+}
+.entry label{
+    background-color: blue;
+    border: black 2px solid;
+}
+input[type="text"] {
+
+    flex: 1;
+    margin: 20px;
+    padding: 12px 20px;
+    border: black 2px solid;
 }

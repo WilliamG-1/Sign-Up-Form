@@ -81,15 +81,20 @@ button.create-account:hover {
     background-color: var(--cyan-Accent);
 }
 .form_message{
+    font-size: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1 1 10%;
 }
 fieldset{
     display: flex;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     padding: 2em;
     background-color: rgb(156, 17, 49);
-    gap: 30px 40px;
+    gap: 35px 30px;
     flex: 1 1 90%;
 }
 fieldset .entry{
@@ -105,7 +110,7 @@ fieldset .entry{
 }
 input[type="text"] {
     flex: 1;
-    margin: 10px;
+    margin: 25px;
     padding: 12px 20px;
     border: black 2px solid;
     color: black;

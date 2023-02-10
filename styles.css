@@ -3,16 +3,15 @@
 }
 @font-face {
     font-family: f;
-    src: url(assets/Norse-Bold.otf);
+    src: url(assets/VarelaRound-Regular.ttf);
 }
 * {
     padding: 0;
     margin: 0;
     color: white;
-    font-family: sans-serif;
+    font-family: f;
 }
 body {
-    background-color: lightgreen;
     padding: 0;
     margin: 0;
     display: flex;
@@ -21,7 +20,7 @@ body {
 }   
 .main_image{
     flex: 2 18 320px;
-    border: white 2px solid;
+    
     
 }
 img {
@@ -43,22 +42,30 @@ img {
     flex: 5 5 160px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(3, 2, 43);
+    background-color: rgb(1, 1, 19);
+    box-shadow: 0 0 10px rgb(247, 177, 229);
 }
 
 .header{
     flex: 1;
-    background-color: blueviolet;
+    background-color: rgb(9, 8, 63);
+    margin: 20px 0;
+    border: 2px var(--cyan-Accent) solid;
+    border-radius: 9px;
 }
 form {
     flex: 3;
-    background-color: rgb(24, 226, 233);
+    background-color: rgb(33, 227, 241);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 .footer {
     flex: 1;
-    background-color: rgb(9, 8, 63);
+    margin: 20px 0;
+    border: 2px var(--cyan-Accent) solid;
+    background-color: rgb(9, 8, 59);
+    border-radius: 9px;
 }
 .footer >*{
     margin-left: 3.5rem;
@@ -86,32 +93,41 @@ button.create-account:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 10%;
+    flex: 1 1 5%;
+    background: rgb(3, 2, 43);
+    border: 2px var(--cyan-Accent) solid;
+    border-bottom: none;
 }
 fieldset{
     display: flex;
     align-content: center;
     flex-wrap: wrap;
     padding: 2em;
-    background-color: rgb(156, 17, 49);
+    /*background: linear-gradient(#F156A3, #ebbfcb);*/
+    background: rgb(3, 2, 43);
     gap: 35px 30px;
     flex: 1 1 90%;
+    border: 2px var(--cyan-Accent) solid;
+    border-top: none;
+    
+
 }
 fieldset .entry{
     display: flex;
     flex: 1 1 47%;
     flex-direction: column;
-    border: black 2px solid;
     justify-content: center;
 }
 .entry label{
-    background-color: blue;
-    border: black 2px solid;
+    font-size: 25px;
+    color:rgb(248, 127, 187);
 }
 input[type="text"] {
     flex: 1;
     margin: 25px;
     padding: 12px 20px;
-    border: black 2px solid;
-    color: black;
+    border: 1px rgb(82, 83, 88) solid;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(3, 2, 43);
 }

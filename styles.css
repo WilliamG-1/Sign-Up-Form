@@ -73,7 +73,9 @@ form {
 button.create-account {
     font-size: 1.5rem;
     color: var(--cyan-Accent);
-    padding: 1.2rem;
+
+    height: 4rem;
+    width: 14rem;
     margin-top: 3.5rem;
     margin-bottom: 2rem;
     background-color: rgb(3, 2, 43);
@@ -81,11 +83,26 @@ button.create-account {
     border-width: 3.5px;
     border-color: var(--cyan-Accent);
     border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button.create-account:hover {
-    
     color:rgb(3, 2, 43);
     background-color: var(--cyan-Accent);
+}
+label[for="submit_button"]{
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    color:var(--cyan-Accent);
+    text-align: center;
+    line-height: 245%;
+    
+}
+button>label[for="submit_button"]:hover{
+    color:rgb(3, 2, 43);
 }
 .form_message{
     font-size: 25px;
@@ -97,6 +114,9 @@ button.create-account:hover {
     background: rgb(3, 2, 43);
     border: 2px var(--cyan-Accent) solid;
     border-bottom: none;
+}
+.login_alt{
+    margin-bottom: 1.5rem;
 }
 fieldset{
     display: flex;
@@ -130,4 +150,8 @@ input[type="text"] {
     border-radius: 4px;
     color: white;
     background-color: rgb(3, 2, 43);
+}
+
+.hidden {
+    display: none;
 }
